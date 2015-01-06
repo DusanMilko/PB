@@ -20,7 +20,7 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 
 	<script src="/js/libs/modernizr.min.js"></script>
 
@@ -119,13 +119,59 @@
 						</div>
 					</div>
 				</li>
+				<li>
+					<div class="rel hunw">
+						<img class="hunw" src="http://placehold.it/250x250"/>
+						<div class="abs">
+							hmmmm
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="rel hunw">
+						<img class="hunw" src="http://placehold.it/250x250"/>
+						<div class="abs">
+							hmmmm
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="rel hunw">
+						<img class="hunw" src="http://placehold.it/250x250"/>
+						<div class="abs">
+							hmmmm
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="rel hunw">
+						<img class="hunw" src="http://placehold.it/250x250"/>
+						<div class="abs">
+							hmmmm
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="rel hunw">
+						<img class="hunw" src="http://placehold.it/250x250"/>
+						<div class="abs">
+							hmmmm
+						</div>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="small-12 columns">
-			<ul class="small-block-grid-2 medium-block-grid-2 large-block-grid-4">
+			<ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4">
+				<li>
+					<img class="hunw" src="http://placehold.it/250x250"/>
+				</li>
+				<li>
+					<img class="hunw" src="http://placehold.it/250x250"/>
+				</li>
 				<li>
 					<img class="hunw" src="http://placehold.it/250x250"/>
 				</li>
