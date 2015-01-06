@@ -1,0 +1,49 @@
+//To enable Sass Globbing, run `gem install sass-globbing`
+
+//Compass
+@import "compass/css3";
+
+//Normalize
+@import "libs/normalize";
+
+//Foundation
+@import "libs/foundation";
+
+//Fonts
+@import "fonts";
+
+//Variables + Mixins
+@import "variables";
+
+//Global Styles
+@import "global";
+
+//Icons
+$icons-spacing: 2px;
+$icons-sprite-dimensions: true;
+@import "compass/utilities/sprites";
+@import "icons/*.png"; 
+@include all-icons-sprites;
+$normalIcon: sprite-map("icons/\*.png", $spacing: 2px);
+
+//Retina
+/*
+@import "icons-2x/*.png"; 
+@include all-icons-2x-sprites;
+$retinaIcon: sprite-map("icons-2x/\*.png", $spacing: 4px);
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+       (-o-min-device-pixel-ratio: 3 / 2), 
+       (min--moz-device-pixel-ratio: 2), 
+       (min-device-pixel-ratio: 2), 
+       (min-resolution: 144dppx) {
+
+       	.icon {
+       		background-image: $retinaIcon;
+			background-size: (image-width(sprite-path($retinaIcon)) / 2) (image-height(sprite-path($retinaIcon)) / 2);
+       	}
+}
+*/
+
+//Partials
+@import "partials/*";

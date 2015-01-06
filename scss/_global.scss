@@ -1,0 +1,129 @@
+
+html, body {
+    width: 100%;
+    -webkit-font-smoothing:antialiased;
+}
+
+// General
+// ------------------------------------------------------ General
+.center {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.hidden {
+    display: none;
+}
+.clear {
+    clear: both;
+}
+.icon {
+	display: block;
+}
+.overflow-hidden {
+	overflow: hidden;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &.inline {
+    	li {
+    		display: inline;
+    	}
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+.sup {
+    font-size: 75%;
+    line-height: 0;
+}
+
+// Size
+// ------------------------------------------------------ Size
+.hunw {
+    width: 100%;
+}
+.hunh {
+    height: 100%;
+}
+
+// Position
+// ------------------------------------------------------ Position
+.fleft {
+    float: left;
+}
+.fright {
+    float: right;
+}
+.rel {
+    position: relative;
+}
+.abs {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+.top {
+    top: 0;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+.bottom {
+    bottom: 0;
+}
+.cenpos {
+    position: relative;
+    left:50%;
+
+    .cenpos-in {
+        position: relative;
+        left: -50%;
+    }
+}
+
+// Copy/Text
+// ------------------------------------------------------ Copy/Text
+.bold {
+    font-weight: bold;
+}
+.caps {
+    text-transform: uppercase;
+}
+.tright {
+    text-align: right;
+}
+
+// Display - vertical align middle
+// ------------------------------------------------------ Display
+.table {
+    display: table;
+    height: 100%;
+    width: 100%;
+
+    .table-cell {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+
+// Fix background-size for ie8
+// ------------------------------------------------------ Fix background-size for ie8
+.lt-ie9 .background-size-support {
+    behavior: url(/backgroundsize.min.htc);
+    -ms-behavior: url(/backgroundsize.min.htc);
+    //filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    //src='img/hero.jpg',
+    //sizingMethod='crop');
+} 
