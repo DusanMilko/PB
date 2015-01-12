@@ -41,9 +41,9 @@
 	<div class="row nav-cont">
 		<div class="header">
 			<a class="fleft icon icons-pb_logo" href=""></a>
-			<ul class="nav inline">
+			<ul class="nav inline js-scroll-nav-cont">
 				<li>
-					<a href="">
+					<a href="#projects">
 						<div class="table">
 							<div class="table-cell">
 								Projects
@@ -52,7 +52,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="#about">
 						<div class="table">
 							<div class="table-cell">
 								About
@@ -61,7 +61,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="#press">
 						<div class="table">
 							<div class="table-cell">
 								Press
@@ -70,7 +70,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="#contact">
 						<div class="table">
 							<div class="table-cell">
 								Contact
@@ -144,7 +144,7 @@
 		</div>
 	</div>
 
-	<div class="row projects-cont">
+	<div id="projects" class="js-scroll-nav-item row projects-cont">
 		<div class="project-item small-12 medium-6 fleft">
 			<img class="hunw" src="/assets/imgs/project_01.png"/>
 		</div>
