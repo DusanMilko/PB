@@ -1,0 +1,15 @@
+.hero-cont {
+	.table {
+		h1 {
+			font-size: 50px;
+			color: $white;
+		}
+		.icons-scroll_down {
+			position: absolute;
+			bottom: 80px;
+			display: table;
+			left: 50%;
+			margin-left: -25px;
+		}
+	}
+}

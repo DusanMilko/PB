@@ -100,6 +100,9 @@ ul {
 .caps {
     text-transform: uppercase;
 }
+.tcenter {
+    text-align: center;
+}
 .tright {
     text-align: right;
 }
@@ -127,3 +130,71 @@ ul {
     //src='img/hero.jpg',
     //sizingMethod='crop');
 } 
+
+// Reset row 
+// ------------------------------------------------------
+.row {
+    max-width: 1600px;
+}
+
+// Sub title
+// ------------------------------------------------------
+.sub-title {
+    color: $green;
+    font-size: 33px;
+    margin: 40px 0 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+p {
+    font-size: 14px;
+    color: $dark-grey;
+}
+
+// Btn 
+// ------------------------------------------------------
+.btn {
+    font-size: 15px;
+    color: $white;
+    padding: 14px 20px;
+    background: $green;
+    text-decoration: none;
+
+    &.btn-center {
+        margin: 0 auto;
+        display: table;
+    }
+}
+
+// Background 
+// ------------------------------------------------------
+.dark-grey {
+    background: $dark-grey;
+
+    p {
+        color: $white;
+    }
+}
+.light-grey {
+    background: $light-grey;
+}
+.green-opacity {
+    background: rgb(141, 148, 98);
+    background: rgba(141, 148, 98, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

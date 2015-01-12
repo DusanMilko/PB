@@ -1,0 +1,48 @@
+.nav-cont {
+	position: fixed;
+	z-index: 2;
+
+	.header {
+		position: relative;
+		height: 81px;
+
+		.icons-pb_logo {
+			position: relative;
+			z-index: 3;
+			margin: 20px;
+		}
+
+		.nav {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			height: 81px;
+			padding: 0px 20px;
+
+			a {
+				height: 81px;
+				padding: 20px 5px;
+				text-decoration: none;
+				color: $white;
+				display: inline-block;
+			}
+		}
+
+		.social {
+			position: relative;
+			z-index: 3;
+			margin: 20px;
+			height: 41px;
+
+			li {
+				float: left;
+
+				a {
+					float: left;
+					height: 41px;
+					padding: 0 5px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+.team-cont {
+	.item {
+		.rel {
+			overflow: hidden;
+
+			&:hover {
+				.abs {
+					top: 0;
+					margin-top: 0;
+				}
+			}
+		} 
+
+		.abs {
+			top: 100%;
+			margin-top: -67px;
+			height: 100%;
+			width: 100%;
+
+			@include transition(all 0.7s ease-in-out);
+
+			.name {
+				color: $white;
+				font-size: 17px;
+				text-align: center;
+				width: 100%;
+			}
+			.title {
+				font-size: 14px;
+				text-align: center;
+				width: 100%;
+				color: $dark-green;
+			}
+			p {
+				color: $white;
+				text-align: center;
+				font-size: 13px;
+			}
+		}
+	}
+}

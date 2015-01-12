@@ -2659,7 +2659,6 @@ th.hide-for-touch {
 }
 html, body {
   width: 100%;
-  body: #FFFFF0;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -2764,6 +2763,10 @@ ul li {
   text-transform: uppercase;
 }
 
+.tcenter {
+  text-align: center;
+}
+
 .tright {
   text-align: right;
 }
@@ -2784,15 +2787,108 @@ ul li {
   -ms-behavior: url(/backgroundsize.min.htc);
 }
 
-.icons-sprite, .icons-placeholder {
-  background-image: url('../imgs/icons-sf1d5012762.png');
+.row {
+  max-width: 1600px;
+}
+
+.sub-title {
+  color: #8d9462;
+  font-size: 33px;
+  margin: 40px 0 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+p {
+  font-size: 14px;
+  color: #2b292a;
+}
+
+.btn {
+  font-size: 15px;
+  color: #fff;
+  padding: 14px 20px;
+  background: #8d9462;
+  text-decoration: none;
+}
+.btn.btn-center {
+  margin: 0 auto;
+  display: table;
+}
+
+.dark-grey {
+  background: #2b292a;
+}
+.dark-grey p {
+  color: #fff;
+}
+
+.light-grey {
+  background: #f3f3f3;
+}
+
+.green-opacity {
+  background: #8d9462;
+  background: rgba(141, 148, 98, 0.8);
+}
+
+.icons-sprite, .icons-email, .icons-facebook, .icons-linkedin, .icons-location, .icons-pb_logo, .icons-phone, .icons-placeholder, .icons-scroll_down, .icons-twitter {
+  background-image: url('../imgs/icons-s6f4557be58.png');
   background-repeat: no-repeat;
 }
 
-.icons-placeholder {
+.icons-email {
   background-position: 0 0;
+  height: 30px;
+  width: 48px;
+}
+
+.icons-facebook {
+  background-position: 0 -32px;
+  height: 22px;
+  width: 22px;
+}
+
+.icons-linkedin {
+  background-position: 0 -56px;
+  height: 32px;
+  width: 33px;
+}
+
+.icons-location {
+  background-position: 0 -90px;
+  height: 48px;
+  width: 38px;
+}
+
+.icons-pb_logo {
+  background-position: 0 -140px;
+  height: 41px;
+  width: 213px;
+}
+
+.icons-phone {
+  background-position: 0 -183px;
+  height: 44px;
+  width: 44px;
+}
+
+.icons-placeholder {
+  background-position: 0 -229px;
   height: 1px;
   width: 1px;
+}
+
+.icons-scroll_down {
+  background-position: 0 -232px;
+  height: 50px;
+  width: 50px;
+}
+
+.icons-twitter {
+  background-position: 0 -284px;
+  height: 22px;
+  width: 22px;
 }
 
 /*
@@ -2812,4 +2908,111 @@ $retinaIcon: sprite-map("icons-2x/\*.png", $spacing: 4px);
        	}
 }
 */
-/* No files to import found in partials/* */
+.about-cont {
+  padding: 40px 10%;
+}
+
+.affiliate-cont {
+  max-width: 1300px;
+}
+.affiliate-cont .item {
+  height: 128px;
+  padding-bottom: 0px;
+}
+
+.hero-cont .table h1 {
+  font-size: 50px;
+  color: #fff;
+}
+.hero-cont .table .icons-scroll_down {
+  position: absolute;
+  bottom: 80px;
+  display: table;
+  left: 50%;
+  margin-left: -25px;
+}
+
+.nav-cont {
+  position: fixed;
+  z-index: 2;
+}
+.nav-cont .header {
+  position: relative;
+  height: 81px;
+}
+.nav-cont .header .icons-pb_logo {
+  position: relative;
+  z-index: 3;
+  margin: 20px;
+}
+.nav-cont .header .nav {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 81px;
+  padding: 0px 20px;
+}
+.nav-cont .header .nav a {
+  height: 81px;
+  padding: 20px 5px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+.nav-cont .header .social {
+  position: relative;
+  z-index: 3;
+  margin: 20px;
+  height: 41px;
+}
+.nav-cont .header .social li {
+  float: left;
+}
+.nav-cont .header .social li a {
+  float: left;
+  height: 41px;
+  padding: 0 5px;
+}
+
+.projects-cont .project-item {
+  padding: 0 3px 6px;
+}
+
+.team-cont .item .rel {
+  overflow: hidden;
+}
+.team-cont .item .rel:hover .abs {
+  top: 0;
+  margin-top: 0;
+}
+.team-cont .item .abs {
+  top: 100%;
+  margin-top: -67px;
+  height: 100%;
+  width: 100%;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+.team-cont .item .abs .name {
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  width: 100%;
+}
+.team-cont .item .abs .title {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  color: #4c5033;
+}
+.team-cont .item .abs p {
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+}
+
+.values-cont .item {
+  padding: 80px 20px 80px;
+}
