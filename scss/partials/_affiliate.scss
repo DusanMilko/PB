@@ -1,5 +1,10 @@
 .affiliate-cont {
-	max-width: 1300px;
+	width: 100%;
+	float: left;
+
+	.row {
+		max-width: 1300px;
+	}
 	
 	.item {
 		height: 128px;

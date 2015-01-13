@@ -1,5 +1,12 @@
 .values-cont {
+	float: left;
+	width: 100%;
+
+	.row {
+		max-width: 1450px;
+	}
+
 	.item {
-		padding: 80px 20px 80px;
+		padding: 80px 30px 80px;
 	}
 }

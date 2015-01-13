@@ -145,11 +145,13 @@ ul {
     margin: 40px 0 10px;
     width: 100%;
     overflow: hidden;
+    font-family: 'OpenSans Regular';
 }
 
 p {
     font-size: 14px;
     color: $dark-grey;
+    font-family: 'OpenSans Light';
 }
 
 // Btn 
@@ -160,6 +162,8 @@ p {
     padding: 14px 20px;
     background: $green;
     text-decoration: none;
+    font-family: 'OpenSans Semibold';
+    text-transform: uppercase;
 
     &.btn-center {
         margin: 0 auto;

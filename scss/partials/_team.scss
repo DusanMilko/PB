@@ -1,4 +1,22 @@
 .team-cont {
+	padding: 120px 0 160px;
+	position: relative;
+	width: 100%;
+	float: left;
+
+	&:before {
+		content: " ";
+		width: 0;
+		height: 0;
+		border-bottom: 20px solid $white;
+		border-left: 27px solid transparent;
+		border-right: 27px solid transparent;
+		position: absolute;
+		top: -20px;
+		left: 50%;
+		margin-left: -27px;
+	}
+
 	.item {
 		.rel {
 			overflow: hidden;

@@ -1,0 +1,74 @@
+#contact {
+	padding: 20px 0 90px;
+	background: url(/assets/imgs/texture.png);
+
+	form {
+		padding: 0 11px;
+
+		.form-item {
+			padding: 9px;
+		}
+		.form-item input, textarea {
+			color: $white;
+			background: #2d2c2b;
+			font-size: 18px;
+			font-family: 'OpenSans Regular';
+			padding: 20px 30px;
+			border: 0px;
+			outline: none;
+			width: 100%;
+		}
+
+		textarea {
+			resize: none;
+			margin: 0px 0 0;
+			height: 247px;
+		}
+
+		.submit {
+			border: 0px;
+			background: $green;
+			color: $white;
+			font-size: 18px;
+			font-family: 'OpenSans Regular';
+			width: 130px;
+			text-align: center;
+			text-transform: uppercase;
+			height: 47px;
+			margin: 0 9px;
+		}
+	}
+	.contact-extra-cont {
+		padding: 0 20px 0 0;
+	}
+	.contact-extra {
+		margin-top: 9px;
+		border: 1px solid #313131;
+		padding: 44px 64px;
+		width: 100%;
+
+		.contact-extra-item {
+			width: 100%;
+			float: left;
+			margin: 20px 0;
+
+			.icon-cont {
+				height: 60px;
+				float: left;
+
+				.icon {
+					float: left;
+					margin-right: 20px;
+				}
+			}
+			.contact-extra-item--content {
+				float: left;
+				color: $white;
+				font-size: 22px;
+				font-family: 'OpenSans SemiBold';
+				margin: 0;
+				height: 60px;
+			}
+		}
+	}
+}

@@ -111,9 +111,29 @@ $(function(){
 		    }
 	    }
 
+	    if($(document).scrollTop() > 100) {
+            $(".nav-cont").addClass("scrolled");
+        } else {
+            $(".nav-cont").removeClass("scrolled");
+        }
+
 	});
 	if($(pin).length && screenWidth > mobile) {
 		pinNav(pin);
 	}
+
+	// Scroll to values
+	$('.js-scroll-to-values').on('click', function(e) {
+		e.preventDefault();
+
+		$('html,body').animate({
+	    	scrollTop: $('.values-cont').offset().top-$('.js-pin').height()
+	    }, 700, 'swing', function() {
+	    	$(scrollCont).removeClass('action');
+	    });	
+
+	    return false;
+
+	});
 
 });

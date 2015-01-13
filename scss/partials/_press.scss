@@ -1,0 +1,31 @@
+#press {
+	.press-item {
+		padding: 180px 20px;
+		float: left;
+		width: 100%;
+
+		background: url(/assets/imgs/press_01.png);
+		background-size: cover;
+	}
+	.press-content {
+		color: $white;
+		font-family: 'OpenSans Regular';
+		font-size: 60px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		line-height: 70px;
+		position: relative;
+
+		span {
+			font-family: 'OpenSans Light';
+			font-size: 60px;
+		}
+
+		.icons-press_btn {
+			position: absolute;
+			top: 50%;
+			margin-top: -60px;
+			right: 0;
+		}
+	}
+}

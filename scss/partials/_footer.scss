@@ -1,0 +1,26 @@
+.footer {
+	width: 100%;
+	float: left;
+	background: $dark-grey;
+	color: $grey;
+	font-size: 15px;
+	font-family: 'OpenSans Light';
+	padding: 0 20px;
+	height: 126px;
+
+	.copyright {
+		width: 100%;
+		max-width: 350px;
+		height: 126px;
+		float: left;
+		text-align: center;
+	}
+	.madeby {
+		border-left: 1px solid #373737;
+		width: 100%;
+		max-width: 210px;
+		height: 126px;
+		float: right;
+		text-align: center;
+	}
+}

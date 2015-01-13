@@ -1,6 +1,22 @@
 .nav-cont {
 	position: fixed;
 	z-index: 2;
+	width: 100%;
+	background: transparent;
+	@include transition(all 0.7s ease-in-out);
+
+	&.scrolled {
+		background: $dark-grey;
+
+		.header .nav {
+			a.active {
+				color: $green;
+			}
+			a:hover {
+				color: $green;
+			}
+		}
+	}
 
 	.header {
 		position: relative;
@@ -21,10 +37,20 @@
 
 			a {
 				height: 81px;
-				padding: 20px 5px;
+				padding: 20px 12px;
 				text-decoration: none;
 				color: $white;
 				display: inline-block;
+				font-family: 'OpenSans CondLight';
+				text-transform: uppercase;
+
+				&.active {
+					color: $dark-grey;
+				}
+
+				&:hover {
+					color: $dark-grey;
+				}
 			}
 		}
 
