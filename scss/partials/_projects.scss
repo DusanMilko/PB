@@ -4,5 +4,419 @@
 	
 	.project-item {
 		padding: 0 3px 6px;
+
+		&:hover {
+			.abs {
+				top: 0;
+				margin-top: 0;
+			}
+		}
+
+		&.medium-4 {
+			.abs {
+				padding: 10px 0px 0;
+
+				.project_logo {
+					padding: 0 30%;
+					margin: 20px 0 10px;
+
+					@include breakpoint($mobile) {
+						padding: 0 35%;
+						margin: 10px 0;
+					}
+				}
+				p {
+					font-size: 14px;
+					padding: 10px 5% 0px;
+
+					@include breakpoint($mobile) {
+						padding: 20px 10%;
+					}
+				}
+				.divider {
+					margin: 5px 30%;
+
+					@include breakpoint(max-width 950px) {
+						margin: 5px 30% 20px;
+					}
+					@include breakpoint($mobile) {
+						margin: 5px 30% 5px;
+					}
+				}
+				.project_btn {
+					left: 50%;
+					margin-left: -40px;
+
+					@include breakpoint($desktop) {
+						margin-left: -27px;
+					}
+
+					img {
+						float: left;
+						width: 80px;
+
+						@include breakpoint($desktop) {
+							width: 54px;
+						}
+					}
+
+					span {
+						font-size: 18px;
+						left: 23px;
+						top: 27px;
+
+						@include breakpoint($desktop) {
+							left: 15px;
+							top: 19px;
+							font-size: 12px;
+						}
+					}
+				}
+			}
+		}
+
+		.hover-cont {
+			float: left;
+			position: relative;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		.abs {
+			top: 100%;
+			margin-top: 0px;
+			height: 100%;
+			width: 100%;
+			padding: 10px 10px 0;
+
+			@include transition(all 0.7s ease-in-out);
+
+			.project_logo {
+				width: 100%;
+				padding: 0 30%;
+				margin: 30px 0;
+
+				@include breakpoint($tablet) {
+					padding: 0 35%;
+					margin: 10px 0;
+				}
+				@include breakpoint($mobile) {
+					padding: 0 35%;
+					margin: 10px 0;
+				}
+			}
+			p {
+				color: $white;
+				font-size: 17px;
+				text-align: center;
+				width: 100%;
+				padding: 20px 10%;
+
+				@include breakpoint(max-width 950px) {
+					display: none;
+				}
+
+				@include breakpoint($tablet) {
+					font-size: 14px;
+					margin-bottom: 0px;
+				}
+				@include breakpoint($mobile) {
+					font-size: 14px;
+					margin-bottom: 0px;
+					display: block;
+				}
+			}
+			.divider {
+				background: $green;
+				width: 40%;
+				margin: 10px 30%;
+				height: 3px;
+				float: left;
+
+				@include breakpoint(max-width 950px) {
+					margin: 10px 30% 30px;
+				}
+				@include breakpoint($mobile) {
+					margin: 10px 30% 30px;
+				}
+			}
+			.project_btn {
+				float: left;
+				left: 50%;
+				position: relative;
+				margin-left: -53px;
+				text-decoration: none;
+				font-style: normal;
+
+				&:hover {
+					img.bg {
+						opacity: 1;
+					}
+				}
+
+				@include breakpoint($tablet) {
+					margin-left: -25px;
+				}
+				@include breakpoint($mobile) {
+					margin-left: -25px;
+				}
+
+				img {
+					float: left;
+
+					@include breakpoint($tablet) {
+						width: 50px;
+					}
+					@include breakpoint($mobile) {
+						width: 50px;
+					}
+
+					&.bg {
+						opacity: 0;
+						position: relative;
+						transform: translateX(-100%);
+						@include transition(all 0.7s ease-in-out);
+					}
+				}
+
+				span {
+					font-size: 18px;
+					text-decoration: none;
+					position: absolute;
+					left: 35px;
+					top: 40px;
+					text-transform: uppercase;
+
+					@include breakpoint($tablet) {
+						left: 15px;
+						top: 19px;
+						font-size: 12px;
+					}
+					@include breakpoint($mobile) {
+						left: 15px;
+						top: 19px;
+						font-size: 12px;
+					}
+				}
+			}
+		}
 	}
 }
+
+.more-projects {
+	overflow: hidden;
+
+	.medium-4 {
+		&:hover {
+			.abs {
+				top: 0;
+				margin-top: 0;
+			}
+		}
+	}
+
+	.abs {
+		top: 100%;
+		margin-top: 0px;
+		height: 100%;
+		width: 100%;
+		padding: 10px 10px 0;
+
+		@include transition(all 0.7s ease-in-out);
+
+		.project_logo {
+			width: 100%;
+			padding: 0 30%;
+			margin: 10px 0;
+		}
+		.divider {
+			background: $green;
+			width: 40%;
+			margin: 10px 30% 20px;
+			height: 3px;
+			float: left;
+		}
+		.project_btn {
+			float: left;
+			left: 50%;
+			position: relative;
+			margin-left: -53px;
+
+			@include breakpoint(max-width 1050px) {
+				margin-left: -25px;
+			}
+
+			img {
+				float: left;
+				
+				@include breakpoint(max-width 1050px) {
+					width: 50px;
+				}
+			}
+		}
+	}
+}
+
+// Project page-break-inside: 
+.project_hero_logo {
+	padding: 0 30%;
+
+	@include breakpoint($mobile) {
+		padding: 0 5%;
+	}
+}
+
+.project-about-cont {
+	padding: 20px 10% 60px;
+	float: left;
+	width: 100%;
+
+	p {
+		line-height: 2em;
+	}
+}
+.project_main_content {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+
+	@include breakpoint($tablet) {
+		position: relative;
+		top: 0;
+		float: left;
+	}
+
+	h4 {
+		background: $red;
+		padding: 20px 30px;
+		font-size: 38px;
+		color: $white;
+		font-family: 'OpenSans CondLight';
+		margin: 40px auto 0;
+		display: table;
+		font-weight: 800;
+
+		@include breakpoint($tablet) {
+			margin-top: 0;
+			font-size: 20px;
+			width: 100%;
+			text-align: center;
+			padding: 20px 10px;
+		}
+	}
+	p {
+		background: $white;
+		padding: 30px;
+		max-width: 800px;
+		clear: both;
+		width: 70%;
+		margin: 0 auto;
+		line-height: 2em;
+
+		@include breakpoint($tablet) {
+			font-size: 14px;
+			width: 100%;
+		}
+	}
+}
+.more-projects {
+	margin: 40px 0 80px;
+	float: left;
+
+	.medium-4 {
+		padding: 0 33px;
+	}
+
+	.project_btn {
+		&:hover {
+			.bg {
+				opacity: 1;
+			}
+		}
+		.bg {
+			opacity: 0;
+			position: relative;
+			transform: translateX(-100%);
+		}
+
+		span {
+			font-size: 18px;
+			text-decoration: none;
+			position: absolute;
+			left: 35px;
+			top: 40px;
+			text-transform: uppercase;
+
+			@include breakpoint($desktop) {
+				left: 13px;
+				top: 17px;
+				font-size: 12px;
+			}
+			@include breakpoint($mobile) {
+				left: 13px;
+				top: 17px;
+				font-size: 12px;
+			}
+		}
+	}
+}
+.more-projects-cont {
+	padding: 20px 0 0;
+}
+.project_btn-cont {
+	padding: 1px 0 0 1px;
+
+	@include breakpoint($mobile) {
+		padding: 1px 0 0;
+	}
+
+	&:first-child {
+		padding: 1px 1px 0 0;
+
+		@include breakpoint($mobile) {
+			padding: 1px 0 0;
+		}
+	}
+
+	.hover-opacity {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		@include transition(all 0.7s ease-in-out);
+	}
+
+	.content-btn {
+		position: relative;
+		z-index: 4;
+	}
+
+	&:hover {
+		.hover-opacity {
+			opacity: 0.5;
+		}
+	}
+}
+.project_btn {
+	font-family: 'OpenSans CondLight';
+	text-align: center;
+	font-weight: 800;
+	font-size: 40px;
+	color: $white;
+	font-style: italic;
+	float: left;
+	width: 100%;
+
+	@include breakpoint($tablet) {
+		font-size: 32px;
+	}
+}
+.project-content-cont {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+

@@ -1,9 +1,9 @@
 #contact {
 	padding: 20px 0 90px;
-	background: url(/assets/imgs/texture.png);
+	background: url(/pb_static/assets/imgs/texture.png);
 
 	form {
-		padding: 0 11px;
+		padding: 20px 11px 0;
 
 		.form-item {
 			padding: 9px;
@@ -39,13 +39,24 @@
 		}
 	}
 	.contact-extra-cont {
-		padding: 0 20px 0 0;
+		padding: 20px 20px 0 0;
+
+		@include breakpoint($tablet) {
+			padding: 40px 10px 0;
+		}
 	}
 	.contact-extra {
 		margin-top: 9px;
 		border: 1px solid #313131;
 		padding: 44px 64px;
 		width: 100%;
+
+		@include breakpoint(max-width 1200px) {
+			padding: 24px 34px;
+		}
+		@include breakpoint($mobile) {
+			padding: 20px 20px;
+		}
 
 		.contact-extra-item {
 			width: 100%;
@@ -68,6 +79,21 @@
 				font-family: 'OpenSans SemiBold';
 				margin: 0;
 				height: 60px;
+
+				@include breakpoint(max-width 1200px) {
+					font-size: 20px;
+				}
+				@include breakpoint(max-width 840px) {
+					font-size: 18px;
+				}
+				@include breakpoint($mobile) {
+					font-size: 13px;
+				}
+
+				a {
+					color: $white;
+					text-decoration: none;
+				}
 			}
 		}
 	}

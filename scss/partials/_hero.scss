@@ -1,12 +1,42 @@
 .hero-cont {
 	width: 100%;
 	float: left;
+	overflow: hidden;
+
+	@include breakpoint($nav) {
+		margin-top: 81px;
+	}
+
+	.fade-in {
+		opacity: 0;
+		@include transition(all 1.7s ease);
+
+		&.on {
+			opacity: 1;
+		}
+	}
 	
 	.table {
+
 		h1 {
-			font-size: 50px;
+			font-size: 80px;
 			color: $white;
-			font-family: 'OpenSans Bold';
+			font-family: 'BigNoodle';
+			letter-spacing: 4px;
+			font-weight: 100;
+			padding: 0 20px;
+			margin: 10px 0;
+
+			@include breakpoint($desktop) {
+				margin: 10px 0;
+				font-size: 60px;
+			}
+			@include breakpoint($tablet) {
+				font-size: 40px;
+			}
+			@include breakpoint($mobile) {
+				font-size: 32px;
+			}
 		}
 		.icons-scroll_down {
 			position: absolute;
@@ -14,6 +44,39 @@
 			display: table;
 			left: 50%;
 			margin-left: -25px;
+
+			@include breakpoint($desktop) {
+				bottom: 40px;
+			}
+			@include breakpoint($tablet) {
+				bottom: 30px;
+			}
 		}
 	}
+}
+
+.animated { 
+    -webkit-animation-duration: 8s; 
+    animation-duration: 8s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: linear; 
+    animation-timing-function: linear; 
+    animation-iteration-count:infinite; 
+    -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes shake { 
+    0%, 100% {-webkit-transform: translateY(0);} 
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateY(-3px);} 
+    20%, 40%, 60%, 80% {-webkit-transform: translateY(3px);} 
+} 
+@keyframes shake { 
+    0%, 100% {transform: translateY(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateY(-3px);} 
+    20%, 40%, 60%, 80% {transform: translateY(3px);} 
+} 
+.shake { 
+    -webkit-animation-name: shake; 
+    animation-name: shake; 
 }

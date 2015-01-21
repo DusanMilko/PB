@@ -2,11 +2,19 @@
 	float: left;
 	width: 100%;
 
+	@include breakpoint($tablet) {
+		padding: 20px 0px 60px;
+	}
+
 	.row {
 		max-width: 1450px;
 	}
 
 	.item {
-		padding: 80px 30px 80px;
+		padding: 80px 30px;
+
+		@include breakpoint($tablet) {
+			padding: 0px 30px;
+		}
 	}
 }

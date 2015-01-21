@@ -117,6 +117,15 @@ $(function(){
             $(".nav-cont").removeClass("scrolled");
         }
 
+        //parallax
+        ph = $(window).height();
+        mph = $(window).scrollTop()/ph;
+        nph = mph*(ph*0.3);
+
+        if($(document).scrollTop() < ph) {
+        	$('.parallax').css('margin-top','-'+nph+'px');
+        }
+
 	});
 	if($(pin).length && screenWidth > mobile) {
 		pinNav(pin);
@@ -134,6 +143,109 @@ $(function(){
 
 	    return false;
 
+	});
+
+	pressSwiper = $('.press-swiper-container').swiper({
+		//Your options here:
+		loop: true,
+		mode:'horizontal',
+		calculateHeight: true,
+		slidesPerViewFit: true,
+		autoplay: 3000
+		//etc..
+	});
+
+	mySwiper = $('.swiper-container').swiper({
+		//Your options here:
+		loop: true,
+		mode:'horizontal',
+		calculateHeight: true,
+		slidesPerViewFit: true,
+		pagination: '.pagination',
+		paginationClickable: true
+		//etc..
+	});
+
+	$('.swiper-prev').on('click',function(e){
+		e.preventDefault();
+
+		mySwiper.swipePrev();
+	});
+
+	$('.swiper-next').on('click',function(e){
+		e.preventDefault();
+
+		mySwiper.swipeNext();
+	});
+
+	$('.fade-in').addClass('on');
+
+	//hamburger
+	$('.js-hamburger').on('click', function(){
+		if( $(this).hasClass('active') ){
+			$(this).removeClass('active');
+			$('.js-hamburger-nav').removeClass('active');
+		} else {
+			$(this).addClass('active');
+			$('.js-hamburger-nav').addClass('active');
+		}
+	})
+
+	//Onresize
+	$(window).resize(function() {
+		//resizeHero();
+		resizeDesc();
+		resizeSwiper();
+	});
+
+	//resizeHero
+	function resizeHero() {
+		if( $(window).width() < 768 ){
+			height = $('.js-min-height-img').height();
+			width = $('.js-min-height-img').width();
+
+			nw = (width*430)/height;
+			$('.js-min-height-img').width(nw);
+		} else {
+			$('.js-min-height-img').width('100%');
+		}
+	}
+
+	function resizeDesc() {
+		width = $('.team-cont .item').width();
+		height = $('.team-cont .item').height();
+		count = (width/13) * ((height-32-67-50)/13);
+
+		if(height == 0){
+		} else {
+			$.each( $('.team-cont .item .abs p'), function( key, value ) {
+				if( $(this).data('copy') == undefined ){
+					copy = $(this).text().substr(0,count);
+					$(this).data('copy',copy);
+					$(this).text( copy+'...' );
+				} else {
+					copy = $(this).data('copy');
+					copy = copy.substr(0,count);
+					$(this).text( copy+'...' );
+				}
+			});
+		}
+	}
+
+	function resizeSwiper() {
+		if( $(window).width() < 768 ){
+			height = $('.swiper-slide img').height();
+			$('.swiper-prev').css('top',(height/2)+'px');
+			$('.swiper-next').css('top',(height/2)+'px');
+		}
+	}
+	
+
+
+	$(window).load(function() {
+		//resizeHero();
+		resizeDesc();
+		resizeSwiper();
 	});
 
 });

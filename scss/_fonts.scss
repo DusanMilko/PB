@@ -10,32 +10,46 @@
 }
 @font-face {
     font-family: 'OpenSans Light';
-    src: url('/assets/css/fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
+    src: url('/pb_static/assets/css/fonts/Open_Sans/OpenSans-Light.ttf') format('truetype');
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans CondLight';
-    src: url('/assets/css/fonts/Open_Sans/OpenSans-CondLight.ttf') format('truetype');
+    src: url('/pb_static/assets/css/fonts/Open_Sans/OpenSans-CondLight.ttf') format('truetype');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSans CondBold';
+    src: url('/pb_static/assets/css/fonts/Open_Sans/OpenSans-CondBold.ttf') format('truetype');
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans Regular';
-    src: url('/assets/css/fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+    src: url('/pb_static/assets/css/fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans Semibold';
-    src: url('/assets/css/fonts/Open_Sans/OpenSans-Semibold.ttf') format('truetype');
+    src: url('/pb_static/assets/css/fonts/Open_Sans/OpenSans-Semibold.ttf') format('truetype');
     font-style: normal;
 }
 @font-face {
     font-family: 'OpenSans Bold';
-    src: url('/assets/css/fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
+    src: url('/pb_static/assets/css/fonts/Open_Sans/OpenSans-Bold.ttf') format('truetype');
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GiorgioMedium';
-    src: url("/assets/css/fonts/Giorgio/GiorgioM-Regular.otf") format("opentype");
+    src: url("/pb_static/assets/css/fonts/Giorgio/GiorgioM-Regular.otf") format("opentype");
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'BigNoodle';
+    src: url("/pb_static/assets/css/fonts/Big_Noodle_Titling/big_noodle_titling.ttf") format("truetype");
+    font-style: normal;
+}
+
+
+

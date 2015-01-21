@@ -1,9 +1,13 @@
 .nav-cont {
 	position: fixed;
-	z-index: 2;
+	z-index: 7;
 	width: 100%;
 	background: transparent;
-	@include transition(all 0.7s ease-in-out);
+	@include transition(all 0.7s ease);
+
+	@include breakpoint($nav) {
+		background: $dark-grey;
+	}
 
 	&.scrolled {
 		background: $dark-grey;
@@ -22,10 +26,46 @@
 		position: relative;
 		height: 81px;
 
-		.icons-pb_logo {
+		.icons-pb_logo,
+		.icons-pb_logo_mobile {
 			position: relative;
 			z-index: 3;
 			margin: 20px;
+		}
+
+		.nav-mobile-hide {
+			display: block;
+			@include breakpoint($nav) {
+				display: none;
+			}
+		}
+		.nav-mobile-show {
+			display: none;
+			@include breakpoint($nav) {
+				display: block;
+			}
+		}
+
+		.hamburger {
+			width: 70px;
+			height: 81px;
+			float: left;
+			padding: 30px 20px;
+			cursor: pointer;
+			display: none;
+			float: right;
+
+			@include breakpoint($nav) {
+				display: block;
+			}
+
+			.first, .second, .third {
+				background: $white;
+				width: 100%;
+				height: 3px;
+				margin: 2px 0;
+				float: left;
+			}
 		}
 
 		.nav {
@@ -35,6 +75,28 @@
 			height: 81px;
 			padding: 0px 20px;
 
+			@include breakpoint($nav) {
+				background: #222;
+				top: 81px;
+				height: auto;
+				padding: 10px 0;
+
+				li {
+					clear: both;
+					float: left;
+					height: 40px;
+
+					a {
+						height: 40px;
+						padding: 0px 20px;
+
+						&:hover {
+							color: $green;
+						}
+					}
+				}
+			}
+
 			a {
 				height: 81px;
 				padding: 20px 12px;
@@ -43,6 +105,8 @@
 				display: inline-block;
 				font-family: 'OpenSans CondLight';
 				text-transform: uppercase;
+				font-size: 20px;
+				letter-spacing: 1px;
 
 				&.active {
 					color: $dark-grey;
@@ -60,6 +124,23 @@
 			margin: 20px;
 			height: 41px;
 
+			@include breakpoint($nav) {
+				display: none;
+				clear: both;
+				position: absolute;
+				top: 261px;
+				width: 100%;
+				background: #222;
+				margin: 0;
+				padding: 20px;
+			}
+
+			&.active {
+				@include breakpoint($nav) {
+					display: table;
+				}
+			}
+
 			li {
 				float: left;
 
@@ -72,3 +153,15 @@
 		}
 	}
 }
+
+
+.js-hamburger-nav {
+	@include breakpoint($nav) {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+}
+

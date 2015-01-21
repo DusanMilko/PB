@@ -20,9 +20,9 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	<link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 
-	<script src="/assets/js/libs/modernizr.min.js"></script>
+	<script src="assets/js/libs/modernizr.min.js"></script>
 
 	<!--[if lt IE 9]>
 	  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
@@ -41,10 +41,18 @@
 	<div class="nav-cont js-pin">
 		<div class="row">
 			<div class="header">
-				<span class="js-scroll-nav-cont fleft">
+				<div class="hamburger js-hamburger">
+					<div class="first"></div>
+					<div class="second"></div>
+					<div class="third"></div>
+				</div>
+				<span class="nav-mobile-show js-scroll-nav-cont fleft">
+					<a class="fleft icon icons-pb_logo_mobile" href="#home"></a>
+				</span>
+				<span class="nav-mobile-hide js-scroll-nav-cont fleft">
 					<a class="fleft icon icons-pb_logo" href="#home"></a>
 				</span>
-				<ul class="nav inline js-scroll-nav-cont">
+				<ul class="nav inline js-scroll-nav-cont js-hamburger-nav">
 					<li class="hide">
 						<a href="#home">
 							<div class="table">
@@ -91,21 +99,21 @@
 						</a>
 					</li>
 				</ul>
-				<ul class="social fright">
+				<ul class="social fright js-hamburger-nav">
 					<li>
-						<a href="">
+						<a target="_blank" href="https://www.linkedin.com/company/pb-companies-llc">
 							<div class="table">
 								<div class="table-cell">
-									<span class="icon icons-twitter" href=""></span>
+									<span class="icon icons-linkedin"></span>
 								</div>
 							</div>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a target="_blank" href="https://www.facebook.com/pbcompaniesllc">
 							<div class="table">
 								<div class="table-cell">
-									<span class="icon icons-facebook" href=""></span>
+									<span class="icon icons-facebook"></span>
 								</div>
 							</div>	
 						</a>
@@ -116,14 +124,15 @@
 	</div>
 
 	<div id="home" class="js-scroll-nav-item hero-cont js-hero">
-		<div class="rel fleft">
-			<img class="hunw fleft" src="/assets/imgs/hero_01.png"/>
+		<div class="js-min-height rel hunw fleft">
+			<div class="js-min-height-img hunw fleft rel" >
+			<div class="parallax" style="background-image: url(/pb_static/assets/imgs/hero_01.png)"/></div>
 			<div class="abs hunw hunh">
 				<div class="table">
-					<div class="table-cell">
+					<div class="table-cell fade-in">
 						<h1 class="tcenter caps">Building the Central Coast</h1>
-						<a class="btn btn-center" href="">View Projects</a>
-						<a class="icon icons-scroll_down js-scroll-to-values" href=""></a>
+						<a class="btn btn-center" href="/pb_static/project.php">View Projects</a>
+						<a class="icon icons-scroll_down js-scroll-to-values animated shake" href="#!"></a>
 					</div>
 				</div>
 			</div>
@@ -132,7 +141,7 @@
 
 	<div class="values-cont">
 		<div class="row">
-			<div class="item small-12 medium-4 fleft">
+			<div class="item small-12 medium-12 large-4 fleft">
 				<h5 class="sub-title caps tcenter">
 					Entitlement
 				</h5>
@@ -140,7 +149,7 @@
 					Entitlement is a key value creation process that marks the first step in creating a viable development project. Here at PB Companies we have an experienced team of developers, engineers, and lawyers to better coordinate and accelerate the complex entitlement process. 
 				</p>
 			</div>
-			<div class="item small-12 medium-4 fleft">
+			<div class="item small-12 medium-12 large-4 fleft">
 				<h5 class="sub-title caps tcenter">
 					Finance
 				</h5>
@@ -148,7 +157,7 @@
 					Since our inception, PB Companies and its principals have created strong investment partnerships with local community members and banking institutions to fund high-potential projects throughout the Central Coast. 
 				</p>
 			</div>
-			<div class="item small-12 medium-4 fleft">
+			<div class="item small-12 medium-12 large-4 fleft">
 				<h5 class="sub-title caps tcenter">
 					Development
 				</h5>
@@ -162,19 +171,89 @@
 	<div id="projects" class="js-scroll-nav-item projects-cont">
 		<div class="row">
 			<div class="project-item small-12 medium-6 fleft">
-				<img class="hunw" src="/assets/imgs/project_01.png"/>
+				<div class="hover-cont">
+					<img class="hunw" src="assets/imgs/project_01.png"/>
+					<div class="abs black-opacity">
+						<div class="table">
+							<div class="table-cell">
+								<img class="project_logo" src="assets/imgs/project_logo_01.png" />
+								<div class="divider"></div>
+								<p>
+									Oak Knoll Creek is a new home community located at the end of Salinas Avenue comprised of 26 single family homes.  ju
+								</p>
+								<a class="project_btn" href="/pb_static/project.php"><img src="assets/imgs/project_btn.png"/><img class="bg" src="assets/imgs/project_btn_bg.png"/><span>View</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="project-item small-12 medium-6 fleft">
-				<img class="hunw" src="/assets/imgs/project_01.png"/>
+				<div class="hover-cont">
+					<img class="hunw" src="assets/imgs/project_02.png"/>
+					<div class="abs black-opacity">
+						<div class="table">
+							<div class="table-cell">
+								<img class="project_logo" src="assets/imgs/project_logo_01.png" />
+								<div class="divider"></div>
+								<p>
+									Oak Knoll Creek is a new home community located at the end of Salinas Avenue comprised of 26 single family homes.  ju
+								</p>
+								<a class="project_btn" href="/pb_static/project.php"><img src="assets/imgs/project_btn.png"/><img class="bg" src="assets/imgs/project_btn_bg.png"/><span>View</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="project-item small-12 medium-4 fleft">
-				<img class="hunw" src="/assets/imgs/project_03.png"/>
+				<div class="hover-cont">
+					<img class="hunw" src="assets/imgs/project_03.png"/>
+					<div class="abs black-opacity">
+						<div class="table">
+							<div class="table-cell">
+								<img class="project_logo" src="assets/imgs/project_logo_01.png" />
+								<div class="divider"></div>
+								<p>
+									Oak Knoll Creek is a new home community located at the end of Salinas Avenue comprised of 26 single family homes.  ju
+								</p>
+								<a class="project_btn" href="/pb_static/project.php"><img src="assets/imgs/project_btn.png"/><img class="bg" src="assets/imgs/project_btn_bg.png"/><span>View</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="project-item small-12 medium-4 fleft">
-				<img class="hunw" src="http://placehold.it/534x534"/>
+				<div class="hover-cont">
+					<img class="hunw" src="assets/imgs/project_04.png"/>
+					<div class="abs black-opacity">
+						<div class="table">
+							<div class="table-cell">
+								<img class="project_logo" src="assets/imgs/project_logo_01.png" />
+								<div class="divider"></div>
+								<p>
+									Oak Knoll Creek is a new home community located at the end of Salinas Avenue comprised of 26 single family homes.  ju
+								</p>
+								<a class="project_btn" href="/pb_static/project.php"><img src="assets/imgs/project_btn.png"/><img class="bg" src="assets/imgs/project_btn_bg.png"/><span>View</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="project-item small-12 medium-4 fleft">
-				<img class="hunw" src="http://placehold.it/534x534"/>
+				<div class="hover-cont">
+					<img class="hunw" src="assets/imgs/project_05.png"/>
+					<div class="abs black-opacity">
+						<div class="table">
+							<div class="table-cell">
+								<img class="project_logo" src="assets/imgs/project_logo_01.png" />
+								<div class="divider"></div>
+								<p>
+									Oak Knoll Creek is a new home community located at the end of Salinas Avenue comprised of 26 single family homes.  ju
+								</p>
+								<a class="project_btn" href="/pb_static/project.php"><img src="assets/imgs/project_btn.png"/><img class="bg" src="assets/imgs/project_btn_bg.png"/><span>View</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -201,56 +280,251 @@
 						<div class="rel hunw">
 							<img class="hunw" src="assets/imgs/team_01.png"/>
 							<div class="abs green-opacity">
-								<div class="name">
-									John Belsher
+								<div class="table">
+									<div class="table-cell">
+										<div class="name">
+											John Belsher
+										</div>
+										<div class="title">
+											Founder
+										</div>
+										<p>
+											Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
+										</p>
+										<a class="center icon icons-linkedin" href=""></a>
+									</div>
 								</div>
-								<div class="title">
-									Founder
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="rel hunw">
+							<img class="hunw" src="assets/imgs/team_02.png"/>
+							<div class="abs green-opacity">
+								<div class="table">
+									<div class="table-cell">
+										<div class="name">
+											Bryan Strickland
+										</div>
+										<div class="title">
+											Operations Manager
+										</div>
+										<p>
+											Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
+										</p>
+										<a class="center icon icons-linkedin" href=""></a>
+									</div>
 								</div>
-								<p>
-									Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
-								</p>
-								<a class="center icon icons-linkedin" href=""></a>
 							</div>
 						</div>
 					</li>
-					<li>
+					<li class="item">
 						<div class="rel hunw">
-							<img class="hunw" src="http://placehold.it/250x250"/>
-							<div class="abs">
-								hmmmm
+							<img class="hunw" src="assets/imgs/team_03.png"/>
+							<div class="abs green-opacity">
+								<div class="table">
+									<div class="table-cell">
+										<div class="name">
+											Russ Sheppel
+										</div>
+										<div class="title">
+											Founder
+										</div>
+										<p>
+											Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
+										</p>
+										<a class="center icon icons-linkedin" href=""></a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</li>
-					<li>
+					<li class="item">
 						<div class="rel hunw">
-							<img class="hunw" src="http://placehold.it/250x250"/>
-							<div class="abs">
-								hmmmm
+							<img class="hunw" src="assets/imgs/team_04.png"/>
+							<div class="abs green-opacity">
+								<div class="table">
+									<div class="table-cell">
+										<div class="name">
+											Hezi Koren
+										</div>
+										<div class="title">
+											Architect
+										</div>
+										<p>
+											Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
+										</p>
+										<a class="center icon icons-linkedin" href=""></a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</li>
-					<li>
+					<li class="item">
 						<div class="rel hunw">
-							<img class="hunw" src="http://placehold.it/250x250"/>
-							<div class="abs">
-								hmmmm
+							<img class="hunw" src="assets/imgs/team_05.png"/>
+							<div class="abs green-opacity">
+								<div class="table">
+									<div class="table-cell">
+										<div class="name">
+											Jenny Emrick
+										</div>
+										<div class="title">
+											Sales Lead
+										</div>
+										<p>
+											Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
+										</p>
+										<a class="center icon icons-linkedin" href=""></a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</li>
-					<li>
+					<li class="item">
 						<div class="rel hunw">
-							<img class="hunw" src="http://placehold.it/250x250"/>
-							<div class="abs">
-								hmmmm
+							<img class="hunw" src="assets/imgs/team_06.png"/>
+							<div class="abs green-opacity">
+								<div class="table">
+									<div class="table-cell">
+										<div class="name">
+											Simon Lowrie
+										</div>
+										<div class="title">
+											Operations Manager
+										</div>
+										<p>
+											Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
+										</p>
+										<a class="center icon icons-linkedin" href=""></a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</li>
-					<li>
+					<li class="item">
 						<div class="rel hunw">
-							<img class="hunw" src="http://placehold.it/250x250"/>
-							<div class="abs">
-								hmmmm
+							<img class="hunw" src="assets/imgs/team_07.png"/>
+							<div class="abs green-opacity">
+								<div class="table">
+									<div class="table-cell">
+										<div class="name">
+											Rex Steward
+										</div>
+										<div class="title">
+											Project Manager
+										</div>
+										<p>
+											Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
+										</p>
+										<a class="center icon icons-linkedin" href=""></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="rel hunw">
+							<img class="hunw" src="assets/imgs/team_08.png"/>
+							<div class="abs green-opacity">
+								<div class="table">
+									<div class="table-cell">
+										<div class="name">
+											Marty Mohamed
+										</div>
+										<div class="title">
+											Architect
+										</div>
+										<p>
+											Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
+										</p>
+										<a class="center icon icons-linkedin" href=""></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="rel hunw">
+							<img class="hunw" src="assets/imgs/team_09.png"/>
+							<div class="abs green-opacity">
+								<div class="table">
+									<div class="table-cell">
+										<div class="name">
+											Adam Crawford
+										</div>
+										<div class="title">
+											Sales
+										</div>
+										<p>
+											Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
+										</p>
+										<a class="center icon icons-linkedin" href=""></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="rel hunw">
+							<img class="hunw" src="assets/imgs/team_10.png"/>
+							<div class="abs green-opacity">
+								<div class="table">
+									<div class="table-cell">
+										<div class="name">
+											Angela Brezden
+										</div>
+										<div class="title">
+											Office Manager
+										</div>
+										<p>
+											Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
+										</p>
+										<a class="center icon icons-linkedin" href=""></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="rel hunw">
+							<img class="hunw" src="assets/imgs/team_11.png"/>
+							<div class="abs green-opacity">
+								<div class="table">
+									<div class="table-cell">
+										<div class="name">
+											Tim Crawford
+										</div>
+										<div class="title">
+											Engineer
+										</div>
+										<p>
+											Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
+										</p>
+										<a class="center icon icons-linkedin" href=""></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item">
+						<div class="rel hunw">
+							<img class="hunw" src="assets/imgs/team_12.png"/>
+							<div class="abs green-opacity">
+								<div class="table">
+									<div class="table-cell">
+										<div class="name">
+											Linda Mayfield
+										</div>
+										<div class="title">
+											Designer
+										</div>
+										<p>
+											Ligula efficitur risus, quis ornare ex velit ultrices quam. Donec dignissim purus sed tempor rutrum. Phasellus ligula leo, pharetra eu massa id, elementum ornare massa. Nullam vitae massa enim. Duis ut fringilla justo.  Lorem ipsum
+										</p>
+										<a class="center icon icons-linkedin" href=""></a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</li>
@@ -266,28 +540,28 @@
 					<li class="item">
 						<div class="table">
 							<div class="table-cell">
-								<img class="center" src="/assets/imgs/affiliate_01.png"/>
+								<img class="center" src="assets/imgs/affiliate_01.png"/>
 							</div>
 						</div>
 					</li>
 					<li class="item">
 						<div class="table">
 							<div class="table-cell">
-								<img class="center" src="/assets/imgs/affiliate_02.png"/>
+								<img class="center" src="assets/imgs/affiliate_02.png"/>
 							</div>
 						</div>
 					</li>
 					<li class="item">
 						<div class="table">
 							<div class="table-cell">
-								<img class="center" src="/assets/imgs/affiliate_03.png"/>
+								<img class="center" src="assets/imgs/affiliate_03.png"/>
 							</div>
 						</div>
 					</li>
 					<li class="item">
 						<div class="table">
 							<div class="table-cell">
-								<img class="center" src="/assets/imgs/affiliate_04.png"/>
+								<img class="center" src="assets/imgs/affiliate_04.png"/>
 							</div>
 						</div>
 					</li>
@@ -296,16 +570,40 @@
 		</div>
 	</div>
 
-	
-	<div id="press" class="js-scroll-nav-item hunw fleft">
-		<div class="row">
-			<div class="press-item background-size-support">
-				<div class="press-content small-12 fleft">
-					A Build Boom in Slo</br>
-					<span>The Tribune</span>
 
-					<a class="icon icons-press_btn" target="_blank" href=""></a>
-				</div>
+	<div id="press" class="js-scroll-nav-item hunw fleft">
+		<div class="press-swiper-container">
+			<div class="swiper-wrapper">
+			  <!--First Slide-->
+			  	<div class="swiper-slide"> 
+			      	<div class="press-item background-size-support">
+						<div class="row">
+							<div class="press-content small-12 fleft">
+								A Build Boom in Slo</br>
+								<span>The Tribune</span>
+
+								<a class="icon icons-press_btn" target="_blank" href="">
+									<span class="icon icons-press_btn_bg"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class="swiper-slide"> 
+			      	<div class="press-item background-size-support">
+						<div class="row">
+							<div class="press-content small-12 fleft">
+								A Build Boom in Slo</br>
+								<span>The Tribune</span>
+
+								<a class="icon icons-press_btn" target="_blank" href="">
+									<span class="icon icons-press_btn_bg"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+			    </div>
+			   <!-- end slides -->
 			</div>
 		</div>
 	</div>
@@ -315,19 +613,19 @@
 			<h5 class="sub-title caps tcenter">
 				Contact
 			</h5>
-			<form class="small-12 medium-7 fleft">
-				<div class="form-item small-6 fleft">
+			<form class="small-12 medium-12 large-6 fleft">
+				<div class="form-item small-12 medium-12 large-6 fleft">
 					<input type="text" placeholder="Name *" />
 				</div>
-				<div class="form-item small-6 fleft">
+				<div class="form-item small-12 medium-12 large-6 fleft">
 					<input type="email" placeholder="Email *" />
 				</div>
 				<div class="form-item small-12 fleft">
 					<textarea rows="4" cols="50" placeholder="Message *"></textarea>
 				</div>
-				<input class="submit" type="submit" value="Submit" />
+				<input class="submit" type="submit" value="SEND" />
 			</form>
-			<div class="contact-extra-cont small-12 medium-5 fleft">
+			<div class="contact-extra-cont small-12 medium-12 large-6 fleft">
 				<div class="contact-extra fleft">
 					<div class="contact-extra-item">
 						<div class="icon-cont">
@@ -373,7 +671,7 @@
 						<div class="contact-extra-item--content">
 							<div class="table">
 								<div class="table-cell">
-									contact@pbcompanies.co
+									<a href="mailto:contact@pbcompanies.co">contact@pbcompanies.co</a>
 								</div>
 							</div>
 						</div>
@@ -405,7 +703,8 @@
 	<!--end content-->
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="/assets/js/app.js"></script>
+	<script src="assets/js/idangerous.swiper.js"></script>
+	<script src="assets/js/app.js"></script>
 
 </body>
 </html>

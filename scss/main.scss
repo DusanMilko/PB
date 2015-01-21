@@ -3,6 +3,9 @@
 //Compass
 @import "compass/css3";
 
+//Breakpoint
+@import "breakpoint";
+
 //Normalize
 @import "libs/normalize";
 
@@ -17,6 +20,9 @@
 
 //Global Styles
 @import "global";
+
+//idangerous swiper
+@import "libs/idangerous-swiper";
 
 //Icons
 $icons-spacing: 2px;

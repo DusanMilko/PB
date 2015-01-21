@@ -4,8 +4,15 @@
 		float: left;
 		width: 100%;
 
-		background: url(/assets/imgs/press_01.png);
+		background: url(/pb_static/assets/imgs/press_01.png);
 		background-size: cover;
+
+		@include breakpoint($desktop) {
+			padding: 180px 20px;
+		}
+		@include breakpoint($tablet) {
+			padding: 100px 20px;
+		}
 	}
 	.press-content {
 		color: $white;
@@ -16,9 +23,32 @@
 		line-height: 70px;
 		position: relative;
 
+		@include breakpoint($desktop) {
+			font-size: 50px;
+			line-height: 60px;
+		}
+		@include breakpoint($tablet) {
+			font-size: 32px;
+			line-height: 42px;
+		}
+		@include breakpoint($mobile) {
+			font-size: 26px;
+			line-height: 36px;
+		}
+
 		span {
 			font-family: 'OpenSans Light';
 			font-size: 60px;
+
+			@include breakpoint($desktop) {
+				font-size: 50px;
+			}
+			@include breakpoint($tablet) {
+				font-size: 40px;
+			}
+			@include breakpoint($mobile) {
+				font-size: 32px;
+			}
 		}
 
 		.icons-press_btn {
@@ -26,6 +56,23 @@
 			top: 50%;
 			margin-top: -60px;
 			right: 0;
+
+			.icon {
+				opacity: 0;
+				@include transition(all 0.7s ease-in-out);
+			}
+
+			&:hover {
+				.icon {
+					opacity: 1;
+				}
+			}
+
+			@include breakpoint($tablet) {
+				position: relative;
+				margin: 50px auto 0px;
+				top: 0;
+			}
 		}
 	}
 }

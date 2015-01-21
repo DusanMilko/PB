@@ -8,19 +8,21 @@
 	padding: 0 20px;
 	height: 126px;
 
+	@include breakpoint($mobile) {
+		height: auto;
+	}
+
 	.copyright {
-		width: 100%;
-		max-width: 350px;
 		height: 126px;
 		float: left;
-		text-align: center;
+		text-align: left;
 	}
 	.madeby {
 		border-left: 1px solid #373737;
 		width: 100%;
-		max-width: 210px;
+		max-width: 135px;
 		height: 126px;
 		float: right;
-		text-align: center;
+		text-align: right;
 	}
 }
