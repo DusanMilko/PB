@@ -120,7 +120,7 @@ $(function(){
         //parallax
         ph = $(window).height();
         mph = $(window).scrollTop()/ph;
-        nph = mph*(ph*0.3);
+        nph = mph*(ph*0.2);
 
         if($(document).scrollTop() < ph) {
         	$('.parallax').css('margin-top','-'+nph+'px');

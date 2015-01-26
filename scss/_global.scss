@@ -236,6 +236,7 @@ p {
 // Js min height 
 // ------------------------------------------------------
 .js-min-height {
+
     @include breakpoint($tablet) {
         height: 430px;
     }
@@ -256,11 +257,13 @@ p {
 
     .parallax {
         position: absolute;
-        top: 8vh;
+        //top: 8vh;
+        top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        transform: translateZ(0) scale(1.2);
+        transform: translateZ(0) scale(1.3);
+        //background-size: auto 150%;
     }
 }
 
